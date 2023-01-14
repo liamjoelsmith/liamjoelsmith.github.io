@@ -1,5 +1,10 @@
 html {
 	font-family: 'Roboto', sans-serif;
+  color: #F8F0E8
+}
+
+body {
+  background: rgba(74, 132, 138, 1.0);
 }
 
 main {
