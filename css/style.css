@@ -11,28 +11,37 @@ main {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+	justify-content: center;
+	padding: 30px;
+	text-align: center;
+}
+
+title {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	justify-content: left;
 	padding: 0 30px;
 	text-align: center;
 	
-	border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
+	border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
 }
 
-main > .intro {
+title > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
 	transition: all 1.5s ease;
 }
 
-main > .intro:hover {
+title > .intro:hover {
 	font-size: 4.75em;
 	color: #654f3a;
 }
 
-main > .tagline {
+title > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
@@ -57,4 +66,5 @@ footer a {
 
 footer a:hover {
 	color: #654f3a;
+	font-size: 25px;
 }
