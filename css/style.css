@@ -29,6 +29,12 @@ main > .tagline {
 }
 
 info {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	justify-content: left;
+	padding: 0 30px;
+	text-align: center;
 	border: 2px solid black;
     border-radius: 5px;
     padding: 5px;
