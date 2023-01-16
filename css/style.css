@@ -14,30 +14,28 @@ main {
 	justify-content: left;
 	padding: 0 30px;
 	text-align: center;
+	
+	border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
 
 main > .intro {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
+	transition: all 1.5s ease;
+}
+
+main > .intro:hover {
+	font-size: 4.75em;
+	color: #654f3a;
 }
 
 main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
-}
-
-info {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	justify-content: left;
-	padding: 0 30px;
-	text-align: center;
-	border: 2px solid black;
-    border-radius: 5px;
-    padding: 5px;
 }
 
 footer {
@@ -49,13 +47,13 @@ footer a {
 	color: #281f15;
 	font-size: 20px;
 	padding: 10px;
-	border-right: 1px solid #281f15;
-	transition: all .5s ease;
+	/* border-right: 1px solid #281f15; */
+	transition: all .75s ease;
 }
 
-footer a:first-child {
+/* footer a:first-child {
 	border-left: 1px solid #281f15;
-}
+} */
 
 footer a:hover {
 	color: #654f3a;
