@@ -1,17 +1,17 @@
 html {
 	font-family: 'Roboto', sans-serif;
-  color: #F8F0E8
+	color: #281f15
 }
 
 body {
-  background: rgba(74, 132, 138, 1.0);
+	background: #e7dfd8;
 }
 
 main {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
-	justify-content: center;
+	justify-content: left;
 	padding: 0 30px;
 	text-align: center;
 }
@@ -26,4 +26,31 @@ main > .tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
+}
+
+info {
+	border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+footer {
+	background: #e7dfd8;
+	padding: 10px 0;
+}
+
+footer a {
+	color: #281f15;
+	font-size: 20px;
+	padding: 10px;
+	border-right: 1px solid #281f15;
+	transition: all .5s ease;
+}
+
+footer a:first-child {
+	border-left: 1px solid #281f15;
+}
+
+footer a:hover {
+	color: #654f3a;
 }
