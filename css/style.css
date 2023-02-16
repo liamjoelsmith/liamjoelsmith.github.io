@@ -18,6 +18,8 @@ main {
 	top: 50%;
 	transform: translate(-50%, -50%);
 
+	width: 80vw;
+
 	-moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box; 
@@ -29,6 +31,32 @@ main {
     padding: 2em 4em;
 }
 
+@media screen and (min-width: 1024px) {
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: left;
+		padding: 5px;
+		text-align: center;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+		width: 50vw;
+
+		-moz-box-sizing: border-box; 
+		-webkit-box-sizing: border-box; 
+		box-sizing: border-box; 
+		
+		border: 2px solid black;
+		border-radius: 6px;
+		-webkit-border-radius: 6px; 
+		-moz-border-radius: 6px;
+		padding: 2em 4em;
+	}
+}
+
 main > .intro {
 	display:inline-block;
 	font-family: 'Reem Kufi', sans-serif;
@@ -38,7 +66,6 @@ main > .intro {
 }
 
 main > .intro:hover {
-	/* font-size: 4.25em; */
 	color: #654f3a;
 	transition: all 1.5s ease;
 }
@@ -46,7 +73,7 @@ main > .intro:hover {
 main > .tagline {
 	display:inline-block;
 	font-size: 1.5rem;
-	margin: 1.5rem 0;
+	margin: 1rem 1rem;
 	font-weight: 100;
 }
 
@@ -75,25 +102,65 @@ footer a:hover {
 .container{
 	display: inline-block;
 }
+/* phone */
 .typewriter{
 	display: inline-block;
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 3.00em;
+	font-size: 2.75em;
 	font-weight: 600;
 
 	overflow: hidden;
-	border-right: .15em solid black;
-	white-space: nowrap;
-	animation: 
-        typing 1s steps(20, end) forwards,
-        blinking 1.2s infinite;
+}
+
+.wavy {
+	display: inline-block;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 2.75em;
+	font-weight: 600;
+	color: #281f15;
+
+	position: relative;
+}
+.wavy static {
+	position: relative;
+	display: inline-block;
+}
+.wavy span {
+	position: relative;
+	display: inline-block;
+	/* text-transform: uppercase; */
+	animation: flip 2s;
+	animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+	0%,80% {
+		transform: rotateY(360deg) 
+	}
+}
+
+
+/* desktop */
+/* @media screen and (min-width: 1024px) {
+	.typewriter{
+		display: inline-block;
+		font-family: 'Reem Kufi', sans-serif;
+		font-size: 2.75em;
+		font-weight: 600;
+	
+		overflow: hidden;
+		border-right: .15em solid #281f15;
+		white-space: nowrap;
+		animation: 
+			typing 1.2s steps(20, end) forwards,
+			blinking 1.2s infinite;
+	}
 }
 @keyframes typing {
 	from { width: 0 }
-	to { width: 90% }
+	to { width: 85% }
 }
 
 @keyframes blinking {
 	from { border-color: transparent }
-	to { border-color: black; }
-}
+	to { border-color: transparent; }
+} */
