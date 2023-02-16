@@ -124,10 +124,18 @@ footer a:hover {
 .wavy static {
 	position: relative;
 	display: inline-block;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	color: #281f15;
 }
 .wavy span {
 	position: relative;
 	display: inline-block;
+	font-family: 'Reem Kufi', sans-serif;
+	font-size: 1em;
+	font-weight: 600;
+	color: #281f15;
 	/* text-transform: uppercase; */
 	animation: flip 2s;
 	animation-delay: calc(.2s * var(--i))
